@@ -1,4 +1,6 @@
 ## websocket
+https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
+
 ``` js
 var ws = new WebSocket('ws://host.com/path');
 
