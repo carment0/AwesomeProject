@@ -20,7 +20,7 @@ export default class SectionListBasics extends Component {
 
 const styles = StyleSheet.create({
   container: {
-   flex: 1,
+   flex: 4,
    paddingTop: 22
   },
   sectionHeader: {

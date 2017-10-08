@@ -7,11 +7,18 @@ import {
 } from 'react-native';
 
 // components imports
-import FlatListBasics from './flatlist';
 import SectionListBasics from './sectionlist';
 import Cats from './image';
 import LotsOfGreetings from './prop_practice';
+import PizzaTranslator from './input';
+
+// component imports not added into render
+import Touchables from './touchables';
+import FlatListBasics from './flatlist';
 import BlinkApp from './state_practice';
+import Movies from './fetching';
+// need to add png images to render
+// import Scrollview from './scrollview'
 
 // Platform.select - returns the value for the platform you are currently running on.
 const instructions = Platform.select({
@@ -29,9 +36,12 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
+        <Text>
+          { instructions }
+        </Text>
         <Cats/>
         <LotsOfGreetings/>
-        <BlinkApp/>
+        <PizzaTranslator/>
         <SectionListBasics/>
       </View>
     );
@@ -42,13 +52,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    color: 'green',
+    fontWeight: 'bold'
   },
   instructions: {
     textAlign: 'center',

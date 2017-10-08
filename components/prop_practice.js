@@ -12,7 +12,7 @@ class Greeting extends Component {
 export default class LotsOfGreetings extends Component {
   render() {
     return (
-      <View style={{alignItems: 'center'}}>
+      <View style={{flex: 1, backgroundColor: 'skyblue'}}>
         <Greeting name='Rexxar' />
         <Greeting name='Jaina' />
         <Greeting name='Valeera' />

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { AppRegistry, FlatList, StyleSheet, Text, View } from 'react-native';
 
-
+// The FlatList component requires two props: data and renderItem. data is the source
+//of information for the list. renderItem takes one item from the source and returns
+//a formatted component to render.
 export default class FlatListBasics extends Component {
   render() {
     return (
@@ -41,7 +43,7 @@ export default class FlatListBasics extends Component {
 
 const styles = StyleSheet.create({
   container: {
-   flex: 1,
+   flex: 2,
    paddingTop: 22
   },
   item: {
